@@ -1,17 +1,7 @@
-﻿enum DiceType {
-    D2 = 2
-    D4 = 4
-    D6 = 6
-    D8 = 8
-    D10 = 10
-    D12 = 12
-    D20 = 20
-}
-
-class Dice {
-    [int[]]$List
-    [Int16]$Maximum
-    [Int16]$Minimum
+﻿class Dice {
+    [string[]]$List
+    [string]$Maximum
+    [string]$Minimum
     [Int16]$Sides
 
     # ToDo: High variance would be cool to write programatically.
@@ -35,16 +25,7 @@ class Dice {
         $this.Sides = $Sides
     }
 
-    # Allow custom list
-    Dice([Array]$List) {
-        $measure = $List | Measure-Object -Maximum -Minimum
-        $this.Maximum = $measure.Maximum
-        $this.Minimum = $measure.Minimum
-        $this.Sides = $measure.Count
-        $this.List = $List
-    }
-
-    [Int16] NewDiceRoll() {
+    [String] NewDiceRoll() {
         $res = $this.list | Get-Random
         Write-Verbose "Rolled a $res"
         return $res

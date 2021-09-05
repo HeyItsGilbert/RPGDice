@@ -12,6 +12,35 @@ BeforeDiscovery {
   Import-Module -Name $outputModVerManifest -Verbose:$false -ErrorAction Stop
 }
 
+Describe "New-Dice" {
+  Context "List" {
+    It "Creates Trophy Dark dice" {
+      $list = @(
+        'Fail',
+        'Fail',
+        'Fail',
+        'Success w/ Complication',
+        'Success w/ Complication',
+        'Success'
+      )
+      $td = New-Dice -List $list
+      $td.List | Should -HaveCount 6
+    }
+  }
+
+  Context "Sides" {
+    It 'Creates a d6' {
+      $d = New-Dice -Sides 6
+      $d.Sides | Should -BeExactly 6
+    }
+
+    It 'Creats a d20' {
+      $d = New-Dice -Sides 20
+      $d.Sides | Should -BeExactly 20
+    }
+  }
+}
+
 Describe "New-DiceRoll" {
   Context "With no parameters" {
     It 'Should only roll D6' {

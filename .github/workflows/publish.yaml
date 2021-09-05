@@ -1,0 +1,21 @@
+name: Publish Module
+on:
+  push:
+    branches-ignore:
+      - gh-pages
+      - develop
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+jobs:
+  build:
+    environment: PowerShell Modules
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Publish to PSGallery
+        shell: pwsh
+        env:
+          PSGALLERY_API_KEY: ${{ secrets.PS_GALLERY_KEY }}
+        run: ./build.ps1 -Task Publish -Bootstrap

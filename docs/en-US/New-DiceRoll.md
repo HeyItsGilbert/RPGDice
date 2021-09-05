@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-DiceRoll
 
 ## SYNOPSIS
-{{ Fill in the Synopsis }}
+Quickly get a dice roll out come!
 
 ## SYNTAX
 
@@ -23,21 +23,44 @@ New-DiceRoll [-Dice <Dice>] [-NoCrits] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-{{ Fill in the Description }}
+Get the outcome of a dice roll. You can use a predifined dice or just tell it
+the dice type.
 
 ## EXAMPLES
 
 ### Example 1
 ```powershell
-PS C:\> {{ Add example code here }}
+PS C:\> New-DiceRoll
 ```
 
-{{ Add example description here }}
+Assume you mean a D6 and gives you a return. Will tell you if it's a critical
+miss on a 1 or a critical hit on a 6.
+
+### Example 2
+```powershell
+PS C:\> New-DiceRoll -NoCrit
+```
+
+Assume you mean a D6 and gives you a return. Will ignore critical hit/miss.
+
+### Example 3
+```powershell
+PS C:\> New-DiceRoll -DiceType D20
+```
+
+Roll a D20.
+
+### Example 4
+```powershell
+PS C:\> New-DiceRoll -Dice $d
+```
+
+Will roll the custom dice you created (`$d`) with `New-Dice`.
 
 ## PARAMETERS
 
 ### -Dice
-{{ Fill Dice Description }}
+This is a dice object you created with `New-Dice`.
 
 ```yaml
 Type: Dice
@@ -52,7 +75,7 @@ Accept wildcard characters: False
 ```
 
 ### -DiceType
-{{ Fill DiceType Description }}
+A quick way to roll a specific type of dice.
 
 ```yaml
 Type: DiceType
@@ -68,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -NoCrits
-{{ Fill NoCrits Description }}
+An optional flag to mute the critical miss/hit message.
 
 ```yaml
 Type: SwitchParameter

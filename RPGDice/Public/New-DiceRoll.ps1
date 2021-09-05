@@ -12,7 +12,7 @@ function New-DiceRoll {
   )
   if ($null -eq $Dice) {
     # If you give a full dice object, use it
-    $Dice = [Dice]::new($DiceType)
+    $Dice = [Dice]::new([int]$DiceType)
   }
   $res = $Dice.NewDiceRoll()
   Write-Verbose "Rolled a $res"

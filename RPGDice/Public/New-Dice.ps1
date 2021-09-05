@@ -1,9 +1,12 @@
 ﻿function New-Dice {
+    [CmdletBinding(DefaultParameterSetName = "Simple")]
     param (
+        [parameter(ParameterSetName = "Simple")]
         [Int16]$Sides,
-        [int[]]$List
+        [parameter(ParameterSetName = "Advanced")]
+        [string[]]$List
     )
     if ($Sides) { [Dice]::new($Sides) }
-    if ($List) { [Dice]::new($List) }
+    elseif ($List) { [NonNumericDice]::new($List) }
     else { [Dice]::new() }
 }

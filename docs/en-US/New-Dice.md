@@ -8,53 +8,75 @@ schema: 2.0.0
 # New-Dice
 
 ## SYNOPSIS
-{{ Fill in the Synopsis }}
+Quickly create a new type of dice!
 
 ## SYNTAX
 
+### Simple (Default)
 ```
-New-Dice [[-Sides] <Int16>] [[-List] <Int32[]>] [<CommonParameters>]
+New-Dice [-Sides <Int16>] [<CommonParameters>]
+```
+
+### Advanced
+```
+New-Dice [-List <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-{{ Fill in the Description }}
+Easily generate new and custom dice. From pre-defined dice to completely custom
+dice.
 
 ## EXAMPLES
 
 ### Example 1
 ```powershell
-PS C:\> {{ Add example code here }}
+PS C:\> New-Dice
 ```
 
-{{ Add example description here }}
+Generates a standard D6 dice.
+
+### Example 1
+```powershell
+PS C:\> New-Dice -List @('Fail','Success')
+```
+
+Generates a success and fail dice.
+
+### Example 1
+```powershell
+PS C:\> New-Dice -Sides 20
+```
+
+Generates a standard D20 dice.
 
 ## PARAMETERS
 
 ### -List
-{{ Fill List Description }}
+Easily create a custom die for your RPG games. The first item in the array is
+the minimum, and the last is the maximum.
 
 ```yaml
-Type: Int32[]
-Parameter Sets: (All)
+Type: String[]
+Parameter Sets: Advanced
 Aliases:
 
 Required: False
-Position: 1
+Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
 ### -Sides
-{{ Fill Sides Description }}
+The number of sides you want your dice to have.
 
 ```yaml
 Type: Int16
-Parameter Sets: (All)
+Parameter Sets: Simple
 Aliases:
 
 Required: False
-Position: 0
+Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
