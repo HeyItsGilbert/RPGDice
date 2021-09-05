@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-results xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="nunit_schema_2.5.xsd" name="Pester" total="42" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="2" invalid="0" date="2021-09-04" time="20:36:07">
+  <environment clr-version="Unknown" user-domain="THEFACEBOOK" os-version="10.0.19043" cwd="C:\Users\gsanchez\repos\RPGDice\tests" platform="Microsoft Windows 10 Enterprise|C:\WINDOWS|\Device\Harddisk0\Partition2" user="gsanchez" nunit-version="2.5.8.0" machine-name="GSANCHEZ-116" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite type="TestFixture" name="Pester" executed="True" result="Ignored" success="True" time="2.6124" asserts="0" description="Pester">
+    <results>
+      <test-suite type="TestFixture" name="C:\Users\gsanchez\repos\RPGDice\tests\Dice.tests.ps1" executed="True" result="Success" success="True" time="1.1981" asserts="0" description="C:\Users\gsanchez\repos\RPGDice\tests\Dice.tests.ps1">
+        <results>
+          <test-suite type="TestFixture" name="New-DiceRoll" executed="True" result="Success" success="True" time="0.4735" asserts="0" description="New-DiceRoll">
+            <results>
+              <test-suite type="TestFixture" name="New-DiceRoll.With no parameters" executed="True" result="Success" success="True" time="0.3666" asserts="0" description="New-DiceRoll.With no parameters">
+                <results>
+                  <test-case description="Should only roll D6" name="New-DiceRoll.With no parameters.Should only roll D6" time="0.1896" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Should be quiet on crits" name="New-DiceRoll.With no parameters.Should be quiet on crits" time="0.1118" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+              <test-case description="Rolls a custom dice object" name="New-DiceRoll.Rolls a custom dice object" time="0.0318" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Rolls a custom DiceType" name="New-DiceRoll.Rolls a custom DiceType" time="0.0117" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Does not allow simple and advanced param set" name="New-DiceRoll.Does not allow simple and advanced param set" time="0.0482" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="C:\Users\gsanchez\repos\RPGDice\tests\Help.tests.ps1" executed="True" result="Success" success="True" time="0.6078" asserts="0" description="C:\Users\gsanchez\repos\RPGDice\tests\Help.tests.ps1">
+        <results>
+          <test-suite type="TestFixture" name="Test help for New-Dice" executed="True" result="Success" success="True" time="0.1886" asserts="0" description="Test help for New-Dice">
+            <results>
+              <test-suite type="TestFixture" name="Test help for New-Dice.Parameter List" executed="True" result="Success" success="True" time="0.1227" asserts="0" description="Test help for New-Dice.Parameter List">
+                <results>
+                  <test-case description="Has description" name="Test help for New-Dice.Parameter List.Has description" time="0.0102" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct [mandatory] value" name="Test help for New-Dice.Parameter List.Has correct [mandatory] value" time="0.0274" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct parameter type" name="Test help for New-Dice.Parameter List.Has correct parameter type" time="0.0075" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="Test help for New-Dice.Parameter Sides" executed="True" result="Success" success="True" time="0.1523" asserts="0" description="Test help for New-Dice.Parameter Sides">
+                <results>
+                  <test-case description="Has description" name="Test help for New-Dice.Parameter Sides.Has description" time="0.0042" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct [mandatory] value" name="Test help for New-Dice.Parameter Sides.Has correct [mandatory] value" time="0.004" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct parameter type" name="Test help for New-Dice.Parameter Sides.Has correct parameter type" time="0.0173" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+              <test-case description="Help is not auto-generated" name="Test help for New-Dice.Help is not auto-generated" time="0.0117" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has description" name="Test help for New-Dice.Has description" time="0.0139" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example code" name="Test help for New-Dice.Has example code" time="0.0107" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example help" name="Test help for New-Dice.Has example help" time="0.01" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="Test help for New-DiceRoll" executed="True" result="Success" success="True" time="0.2887" asserts="0" description="Test help for New-DiceRoll">
+            <results>
+              <test-suite type="TestFixture" name="Test help for New-DiceRoll.Parameter Dice" executed="True" result="Success" success="True" time="0.043" asserts="0" description="Test help for New-DiceRoll.Parameter Dice">
+                <results>
+                  <test-case description="Has description" name="Test help for New-DiceRoll.Parameter Dice.Has description" time="0.0106" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct [mandatory] value" name="Test help for New-DiceRoll.Parameter Dice.Has correct [mandatory] value" time="0.0044" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct parameter type" name="Test help for New-DiceRoll.Parameter Dice.Has correct parameter type" time="0.0045" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="Test help for New-DiceRoll.Parameter DiceType" executed="True" result="Success" success="True" time="0.0619" asserts="0" description="Test help for New-DiceRoll.Parameter DiceType">
+                <results>
+                  <test-case description="Has description" name="Test help for New-DiceRoll.Parameter DiceType.Has description" time="0.005" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct [mandatory] value" name="Test help for New-DiceRoll.Parameter DiceType.Has correct [mandatory] value" time="0.0055" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct parameter type" name="Test help for New-DiceRoll.Parameter DiceType.Has correct parameter type" time="0.0035" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="Test help for New-DiceRoll.Parameter NoCrits" executed="True" result="Success" success="True" time="0.0856" asserts="0" description="Test help for New-DiceRoll.Parameter NoCrits">
+                <results>
+                  <test-case description="Has description" name="Test help for New-DiceRoll.Parameter NoCrits.Has description" time="0.0059" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct [mandatory] value" name="Test help for New-DiceRoll.Parameter NoCrits.Has correct [mandatory] value" time="0.0085" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct parameter type" name="Test help for New-DiceRoll.Parameter NoCrits.Has correct parameter type" time="0.0046" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+              <test-case description="Help is not auto-generated" name="Test help for New-DiceRoll.Help is not auto-generated" time="0.0058" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has description" name="Test help for New-DiceRoll.Has description" time="0.0043" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example code" name="Test help for New-DiceRoll.Has example code" time="0.0044" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example help" name="Test help for New-DiceRoll.Has example help" time="0.0038" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="C:\Users\gsanchez\repos\RPGDice\tests\Manifest.tests.ps1" executed="True" result="Ignored" success="True" time="0.509" asserts="0" description="C:\Users\gsanchez\repos\RPGDice\tests\Manifest.tests.ps1">
+        <results>
+          <test-suite type="TestFixture" name="Module manifest" executed="True" result="Success" success="True" time="0.1649" asserts="0" description="Module manifest">
+            <results>
+              <test-suite type="TestFixture" name="Module manifest.Validation" executed="True" result="Success" success="True" time="0.1618" asserts="0" description="Module manifest.Validation">
+                <results>
+                  <test-case description="Has a valid manifest" name="Module manifest.Validation.Has a valid manifest" time="0.0156" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has a valid name in the manifest" name="Module manifest.Validation.Has a valid name in the manifest" time="0.0156" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has a valid root module" name="Module manifest.Validation.Has a valid root module" time="0.0074" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has a valid version in the manifest" name="Module manifest.Validation.Has a valid version in the manifest" time="0.0099" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has a valid description" name="Module manifest.Validation.Has a valid description" time="0.0209" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has a valid author" name="Module manifest.Validation.Has a valid author" time="0.0151" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has a valid guid" name="Module manifest.Validation.Has a valid guid" time="0.0261" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has a valid copyright" name="Module manifest.Validation.Has a valid copyright" time="0.017" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has a valid version in the changelog" name="Module manifest.Validation.Has a valid version in the changelog" time="0.0182" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Changelog and manifest versions are the same" name="Module manifest.Validation.Changelog and manifest versions are the same" time="0.0116" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="Git tagging" executed="True" result="Ignored" success="True" time="0.1778" asserts="0" description="Git tagging">
+            <results>
+              <test-case description="Is tagged with a valid version" name="Git tagging.Is tagged with a valid version" time="0.0069" asserts="0" success="False" result="Ignored" executed="False" />
+              <test-case description="Matches manifest version" name="Git tagging.Matches manifest version" time="0.0024" asserts="0" success="False" result="Ignored" executed="False" />
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="C:\Users\gsanchez\repos\RPGDice\tests\Meta.tests.ps1" executed="True" result="Success" success="True" time="0.2975" asserts="0" description="C:\Users\gsanchez\repos\RPGDice\tests\Meta.tests.ps1">
+        <results>
+          <test-suite type="TestFixture" name="Text files formatting" executed="True" result="Success" success="True" time="0.0329" asserts="0" description="Text files formatting">
+            <results>
+              <test-suite type="TestFixture" name="Text files formatting.File encoding" executed="True" result="Success" success="True" time="0.0193" asserts="0" description="Text files formatting.File encoding">
+                <results>
+                  <test-case description="No text file uses Unicode/UTF-16 encoding" name="Text files formatting.File encoding.No text file uses Unicode/UTF-16 encoding" time="0.0164" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="Text files formatting.Indentations" executed="True" result="Success" success="True" time="0.0299" asserts="0" description="Text files formatting.Indentations">
+                <results>
+                  <test-case description="No text file use tabs for indentations" name="Text files formatting.Indentations.No text file use tabs for indentations" time="0.0075" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

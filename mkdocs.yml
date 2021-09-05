@@ -1,0 +1,8 @@
+site_name: "RPGDice: A PowerShell Module"
+site_description: 'The Get-Help, online!'
+site_author: 'Gilbert Sanchez'
+site_url: 'https://heyitsgilbert.github.io/RPGDice/'
+docs_dir: docs/
+repo_name: 'HeyItsGilbert/RPGDice'
+repo_url: https://github.com/HeyItsGilbert/RPGDice
+theme: readthedocs
