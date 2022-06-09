@@ -39,8 +39,9 @@ if ($Bootstrap.IsPresent) {
 $psakeFile = './psakeFile.ps1'
 if ($PSCmdlet.ParameterSetName -eq 'Help') {
     Get-PSakeScriptTasks -buildFile $psakeFile |
-        Format-Table -Property Name, Description, Alias, DependsOn
+    Format-Table -Property Name, Description, Alias, DependsOn
 } else {
+    Invoke-PSDepend -Path './requirements.psd1' -Import -Force -WarningAction SilentlyContinue
     Set-BuildEnvironment -Force
     Invoke-psake -buildFile $psakeFile -taskList $Task -nologo -properties $Properties -parameters $Parameters
     exit ([int](-not $psake.build_success))
