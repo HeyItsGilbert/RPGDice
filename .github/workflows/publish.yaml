@@ -1,10 +1,6 @@
 name: Publish Module
 on:
   push:
-    branches-ignore:
-      - gh-pages
-      - develop
-  pull_request:
     branches:
       - main
   workflow_dispatch:
