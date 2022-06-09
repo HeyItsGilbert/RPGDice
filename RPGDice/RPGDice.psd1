@@ -9,28 +9,28 @@
 @{
 
     # Script module or binary module file associated with this manifest.
-    RootModule        = 'RPGDice.psm1'
+    RootModule = 'RPGDice.psm1'
 
     # Version number of this module.
-    ModuleVersion     = '0.1.1'
+    ModuleVersion = '0.1.2'
 
     # Supported PSEditions
     # CompatiblePSEditions = @()
 
     # ID used to uniquely identify this module
-    GUID              = 'e920b644-23dd-4fe0-8e51-68b8966f7bf0'
+    GUID = 'e920b644-23dd-4fe0-8e51-68b8966f7bf0'
 
     # Author of this module
-    Author            = 'Gilbert Sanchez'
+    Author = 'Gilbert Sanchez'
 
     # Company or vendor of this module
-    CompanyName       = 'Unknown'
+    CompanyName = 'Unknown'
 
     # Copyright statement for this module
-    Copyright         = '(c) Gilbert Sanchez. All rights reserved.'
+    Copyright = '(c) Gilbert Sanchez. All rights reserved.'
 
     # Description of the functionality provided by this module
-    Description       = 'Roll dice right from PowerShell!'
+    Description = 'Roll dice right from PowerShell!'
 
     # Minimum version of the PowerShell engine required by this module
     # PowerShellVersion = ''
@@ -72,13 +72,13 @@
     FunctionsToExport = '*'
 
     # Cmdlets to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no cmdlets to export.
-    CmdletsToExport   = '*'
+    CmdletsToExport = '*'
 
     # Variables to export from this module
     VariablesToExport = '*'
 
     # Aliases to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no aliases to export.
-    AliasesToExport   = '*'
+    AliasesToExport = '*'
 
     # DSC resources to export from this module
     # DscResourcesToExport = @()
@@ -90,12 +90,12 @@
     # FileList = @()
 
     # Private data to pass to the module specified in RootModule/ModuleToProcess. This may also contain a PSData hashtable with additional module metadata used by PowerShell.
-    PrivateData       = @{
+    PrivateData = @{
 
         PSData = @{
 
             # Tags applied to this module. These help with module discovery in online galleries.
-            Tags       = @('PoshBot', 'DND', 'Dice', 'Games')
+            Tags = @('PoshBot', 'DND', 'Dice', 'Games')
 
             # A URL to the license for this module.
             # LicenseUri = ''

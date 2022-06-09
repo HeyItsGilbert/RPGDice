@@ -19,3 +19,21 @@ Install-Module RPGDice
 ## Examples
 
 Check out the docs! <https://heyitsgilbert.github.io/RPGDice/>
+
+## Pull Requests
+
+If you want to submit a PR please do! You'll need to run the build script to
+test it. You should also include tests if you're adding a feature.
+
+If it's your first time you'll want to run the bootstrap to install all the
+pre-requisite modules.
+
+```powershell
+.\build.ps1 -Task Build -Bootstrap
+```
+
+Testing:
+
+```powershell
+.\build.ps1 -Task Test
+```
