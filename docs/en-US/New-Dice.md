@@ -52,8 +52,7 @@ Generates a standard D20 dice.
 ## PARAMETERS
 
 ### -List
-Easily create a custom die for your RPG games. The first item in the array is
-the minimum, and the last is the maximum.
+{{ Fill List Description }}
 
 ```yaml
 Type: String[]
