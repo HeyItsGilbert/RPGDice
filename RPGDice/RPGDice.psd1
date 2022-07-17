@@ -12,7 +12,7 @@
     RootModule = 'RPGDice.psm1'
 
     # Version number of this module.
-    ModuleVersion = '0.1.3'
+    ModuleVersion = '0.1.4'
 
     # Supported PSEditions
     # CompatiblePSEditions = @()
@@ -98,22 +98,22 @@
             Tags = @('PoshBot', 'DND', 'Dice', 'Games')
 
             # A URL to the license for this module.
-            # LicenseUri = ''
+            LicenseUri = 'https://github.com/HeyItsGilbert/RPGDice/blob/main/LICENSE'
 
             # A URL to the main website for this project.
             ProjectUri = 'https://github.com/HeyItsGilbert/RPGDice'
 
             # A URL to an icon representing this module.
-            # IconUri = ''
+            IconUri = 'https://raw.githubusercontent.com/HeyItsGilbert/RPGDice/main/static/icon-85x85.png'
 
             # ReleaseNotes of this module
-            # ReleaseNotes = ''
+            ReleaseNotes = 'https://github.com/HeyItsGilbert/RPGDice/blob/main/CHANGELOG.md'
 
             # Prerelease string of this module
             # Prerelease = ''
 
             # Flag to indicate whether the module requires explicit user acceptance for install/update/save
-            # RequireLicenseAcceptance = $false
+            RequireLicenseAcceptance = $false
 
             # External dependent modules of this module
             # ExternalModuleDependencies = @()
