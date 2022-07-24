@@ -1,7 +1,7 @@
 ---
 external help file: RPGDice-help.xml
 Module Name: RPGDice
-online version:
+online version: https://heyitsgilbert.github.io/RPGDice/en-US/New-DiceRoll/
 schema: 2.0.0
 ---
 
@@ -14,7 +14,7 @@ Quickly get a dice roll out come!
 
 ### Simple (Default)
 ```
-New-DiceRoll [-DiceType <DiceType>] [-NoCrits] [<CommonParameters>]
+New-DiceRoll [-DiceType <String>] [-NoCrits] [<CommonParameters>]
 ```
 
 ### Advanced
@@ -23,44 +23,63 @@ New-DiceRoll [-Dice <Dice>] [-NoCrits] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get the outcome of a dice roll. You can use a predifined dice or just tell it
+Get the outcome of a dice roll.
+You can use a predifined dice or just tell it
 the dice type.
 
 ## EXAMPLES
 
-### Example 1
-```powershell
-PS C:\> New-DiceRoll
+### EXAMPLE 1
+```
+New-DiceRoll
 ```
 
-Assume you mean a D6 and gives you a return. Will tell you if it's a critical
+Assume you mean a D6 and gives you a return.
+Will tell you if it's a critical
 miss on a 1 or a critical hit on a 6.
 
-### Example 2
-```powershell
-PS C:\> New-DiceRoll -NoCrit
+### EXAMPLE 2
+```
+New-DiceRoll -NoCrit
 ```
 
-Assume you mean a D6 and gives you a return. Will ignore critical hit/miss.
+Assume you mean a D6 and gives you a return.
+Will ignore critical hit/miss.
 
-### Example 3
-```powershell
-PS C:\> New-DiceRoll -DiceType D20
+### EXAMPLE 3
+```
+New-DiceRoll -DiceType D20
 ```
 
 Roll a D20.
 
-### Example 4
-```powershell
-PS C:\> New-DiceRoll -Dice $d
+### EXAMPLE 4
+```
+New-DiceRoll -Dice $d
 ```
 
-Will roll the custom dice you created (`$d`) with `New-Dice`.
+Will roll the custom dice you created (\`$d\`) with \`New-Dice\`.
 
 ## PARAMETERS
 
+### -DiceType
+The type of Dice you want.
+D6, D8, D10, D12, or D20 for example.
+
+```yaml
+Type: String
+Parameter Sets: Simple
+Aliases:
+
+Required: False
+Position: Named
+Default value: D6
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Dice
-This is a dice object you created with `New-Dice`.
+An existing Dice object
 
 ```yaml
 Type: Dice
@@ -74,24 +93,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -DiceType
-A quick way to roll a specific type of dice.
-
-```yaml
-Type: DiceType
-Parameter Sets: Simple
-Aliases:
-Accepted values: D2, D4, D6, D8, D10, D12, D20
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -NoCrits
-An optional flag to mute the critical miss/hit message.
+Disable the critical success/failure notifications
 
 ```yaml
 Type: SwitchParameter
@@ -100,7 +103,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -110,11 +113,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### None
-
 ## OUTPUTS
 
-### System.Object
 ## NOTES
 
 ## RELATED LINKS
+
+[https://heyitsgilbert.github.io/RPGDice/en-US/New-DiceRoll/](https://heyitsgilbert.github.io/RPGDice/en-US/New-DiceRoll/)
+

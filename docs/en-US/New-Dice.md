@@ -1,7 +1,7 @@
 ---
 external help file: RPGDice-help.xml
 Module Name: RPGDice
-online version:
+online version: https://heyitsgilbert.github.io/RPGDice/en-US/New-Dice/
 schema: 2.0.0
 ---
 
@@ -23,48 +23,34 @@ New-Dice [-List <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Easily generate new and custom dice. From pre-defined dice to completely custom
-dice.
+Easily generate new and custom dice.
+From pre-defined dice to completely
+custom dice.
 
 ## EXAMPLES
 
-### Example 1
-```powershell
-PS C:\> New-Dice
+### EXAMPLE 1
+```
+New-Dice
 ```
 
 Generates a standard D6 dice.
 
-### Example 1
-```powershell
-PS C:\> New-Dice -List @('Fail','Success')
+### EXAMPLE 2
+```
+New-Dice -List @('Fail','Success')
 ```
 
 Generates a success and fail dice.
 
-### Example 1
-```powershell
-PS C:\> New-Dice -Sides 20
+### EXAMPLE 3
+```
+New-Dice -Sides 20
 ```
 
 Generates a standard D20 dice.
 
 ## PARAMETERS
-
-### -List
-{{ Fill List Description }}
-
-```yaml
-Type: String[]
-Parameter Sets: Advanced
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
 
 ### -Sides
 The number of sides you want your dice to have.
@@ -72,6 +58,22 @@ The number of sides you want your dice to have.
 ```yaml
 Type: Int16
 Parameter Sets: Simple
+Aliases:
+
+Required: False
+Position: Named
+Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -List
+An array of sides for your dice.
+This can be an int or a string.
+
+```yaml
+Type: String[]
+Parameter Sets: Advanced
 Aliases:
 
 Required: False
@@ -86,11 +88,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### None
-
 ## OUTPUTS
 
-### System.Object
 ## NOTES
+Information or caveats about the function e.g.
+'This function is not supported in Linux'
 
 ## RELATED LINKS
+
+[https://heyitsgilbert.github.io/RPGDice/en-US/New-Dice/](https://heyitsgilbert.github.io/RPGDice/en-US/New-Dice/)
+

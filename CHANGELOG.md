@@ -5,6 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.1.5] High Variance + Help Changes + Tags
+
+- Add new High Variance cmdlet. I was going to try to be smart and figure out an
+  equation to dynamically generate it, but I'm not that smart.
+- All help is coming from comment help vs from markdown files
+- Updated the tags to include platform.
+- Change DiceType on New-DiceRoll to be string to allow better Get-Help output
+- Add launch.json to help debug module
+- Moved classes to singular class file to avoid TypeNotFound error
+- Update Module manifest to empty *ToExport since the build process updates the
+  functions list anyways.
+
 ## [0.1.4] Metadate Update
 
 Updating the module manifest to have the following:
