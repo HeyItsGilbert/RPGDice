@@ -1,4 +1,5 @@
 # RPGDice
+![PowerShell Gallery](https://img.shields.io/powershellgallery/dt/RPGDice) ![PowerShell Gallery Version](https://img.shields.io/powershellgallery/v/RPGDice) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/HeyItsGilbert/RPGDice/CI) ![PowerShell Gallery](https://img.shields.io/powershellgallery/p/RPGDice)
 
 Roll dice right from PowerShell!
 
