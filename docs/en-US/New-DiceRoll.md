@@ -14,7 +14,7 @@ Quickly get a dice roll out come!
 
 ### Simple (Default)
 ```
-New-DiceRoll [-DiceType <DiceType>] [-NoCrits] [<CommonParameters>]
+New-DiceRoll [-DiceType <String>] [-NoCrits] [<CommonParameters>]
 ```
 
 ### Advanced
@@ -67,10 +67,9 @@ The type of Dice you want.
 D6, D8, D10, D12, or D20 for example.
 
 ```yaml
-Type: DiceType
+Type: String
 Parameter Sets: Simple
 Aliases:
-Accepted values: D2, D4, D6, D8, D10, D12, D20
 
 Required: False
 Position: Named

@@ -4,8 +4,8 @@
 .DESCRIPTION
   Easily generate new and custom dice. From pre-defined dice to completely
   custom dice.
-.LINK
-  https://heyitsgilbert.github.io/RPGDice/en-US/New-HighVarianceDice/
+#.LINK
+#  https://heyitsgilbert.github.io/RPGDice/en-US/New-HighVarianceDice/
 .PARAMETER Sides
   The type of dice you want. Currently only supports D6 through D20.
 .EXAMPLE

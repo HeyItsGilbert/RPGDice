@@ -34,17 +34,21 @@ function New-DiceRoll {
   [CmdletBinding(DefaultParameterSetName = 'Simple')]
   param (
     [parameter(ParameterSetName = 'Simple')]
-    [DiceType]
+    [ValidateSet('D2', 'D4', 'D6', 'D8', 'D10', 'D12', 'D20')]
+    [String]
     $DiceType = 'D6',
     [parameter(ParameterSetName = 'Advanced')]
     [Dice]
     $Dice,
+    [parameter(ParameterSetName = 'Simple')]
+    [parameter(ParameterSetName = 'Advanced')]
     [switch]
     $NoCrits
   )
   if ($null -eq $Dice) {
     # If you give a full dice object, use it
-    $Dice = [Dice]::new([int]$DiceType)
+    [int]$sides = [DiceType]$DiceType
+    $Dice = [Dice]::new([int]$sides)
   }
   $res = $Dice.NewDiceRoll()
   Write-Verbose "Rolled a $res"
